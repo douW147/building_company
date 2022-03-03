@@ -6,6 +6,7 @@ $brown: #AE7B3C;
 $white: #fff;
 $menuItemsBlack: #282B22;
 $menuNumber: #3D4A39;
+$green: #3d4a39;
 
 /* decorators */
 
@@ -28,7 +29,7 @@ font-family: 'Raleway', sans-serif;
 
 /* mutual components */
 .heading-h1{
-    margin: 16% 0 0;
+    margin: 100px 0 0;
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -39,14 +40,13 @@ font-family: 'Raleway', sans-serif;
 }
 
 .text-18-medium{
-    margin: 7%;
+    margin: 60px 7% 0;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
     text-align: center;
-    opacity: 0.95;
 }
 
 .text-botton{
@@ -80,7 +80,6 @@ font-family: 'Raleway', sans-serif;
             font-weight: 500;
             font-size: 15px;
             line-height: 100%;
-            color: $menuItemsBlack;
         }
         .menu-number{
             font-family: Lato;
@@ -89,7 +88,6 @@ font-family: 'Raleway', sans-serif;
             font-size: 16px;
             line-height: 100%;
             text-transform: uppercase;
-            color: $menuNumber;
         }
     }
 }
@@ -177,4 +175,16 @@ font-family: 'Raleway', sans-serif;
         .main__main-photo{
         }
     }
+}
+
+@media (max-width: 575.98px) {
+    .heading-h1{
+        font-size: 56px;
+    }
+    
+    .text-18-medium{
+        font-size: 17px;
+        width: 100%;
+    }
+    
 }
