@@ -57,7 +57,7 @@ font-family: 'Raleway', sans-serif;
 }
 
 .heading-h5{
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     font-family: Raleway;
     font-style: normal;
     font-weight: 600;
@@ -167,7 +167,9 @@ font-family: 'Raleway', sans-serif;
 }
 
 /* directions */
+
 .directions{
+    padding-bottom: 90px;
     .directions__directions-card{
         margin-bottom: 40px;
         border-left: 3px solid $green-opacity;
@@ -175,6 +177,34 @@ font-family: 'Raleway', sans-serif;
     .directions__directions-card:last-child{
         border-right: 3px solid $green-opacity;
     }
+}
+
+/* we provide */
+
+.weprovide{
+    background-color: $green;
+    color: $white;
+    padding-bottom: 40px;
+    .heading-h2{
+        margin: 0 0 100px;
+        color: $white;
+        padding: 100px 0 0;
+    }
+    .heading-h5{
+        color: $white;
+        font-weight: 500;
+        opacity: 0.5;
+        margin-top: 20px;
+    }
+    .weprovide__weprovide-card{
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+    
 }
 
 @media (max-width: 991.98px) { 
@@ -256,12 +286,16 @@ font-family: 'Raleway', sans-serif;
             margin: 50px 0;
             width: 80%;
         }
+        .text-18-medium{
+            width: 140%;
+        }
     }
 
     /* directions */
     .directions{
         .directions__directions-card{
             padding: 0;
+            margin-bottom: 90px;
             border: none;
             width: 90%;
         }
@@ -269,19 +303,37 @@ font-family: 'Raleway', sans-serif;
             border: none;
         }
         .directions-container{
-            padding: 0 10px;
-            border-left: 3px solid $green-opacity;
-            border-right: 3px solid $green-opacity;
+            padding: 0 10px 12%;
+            border-left: 2px solid $green-opacity;
+            border-right: 2px solid $green-opacity;
+            border-bottom: 2px solid $green-opacity;
         }
         .directions-card-photo{
-            width: 250px;
+            width: 260px;
             height: auto;
         }
         .heading-h5{
+            margin-bottom: 35px;
             text-align: center;
         }
         .directions-container{
             text-align: center;
+        }
+    }
+
+    /* we provide */
+    .weprovide{
+        .heading-h2{
+            font-size: 40px;
+        }
+        .heading-h5{
+            color: $white;
+            font-weight: 500;
+            opacity: 0.5;
+            margin-top: 15px;
+        }
+        .weprovide__weprovide-card{
+            margin-bottom: 65px;
         }
     }
 }
