@@ -7,6 +7,7 @@ $white: #fff;
 $menuItemsBlack: #282B22;
 $menuNumber: #3D4A39;
 $green: #3d4a39;
+$green-opacity: rgba(61, 74, 57, 0.2);
 $black: #000;
 
 /* decorators */
@@ -19,6 +20,9 @@ $black: #000;
 }
 .--text-align-center{
     text-align: center;
+}
+.--justify-content-center{
+    justify-content: center;
 }
 
 
@@ -38,6 +42,28 @@ font-family: 'Raleway', sans-serif;
     line-height: 120%;
     text-align: center;
     text-transform: uppercase;
+}
+
+.heading-h2{
+    margin: 120px 0 70px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 125%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $menuItemsBlack;
+}
+
+.heading-h5{
+    margin-bottom: 20px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    color: $green;
 }
 
 .text-18-medium{
@@ -140,6 +166,17 @@ font-family: 'Raleway', sans-serif;
     }
 }
 
+/* directions */
+.directions{
+    .directions__directions-card{
+        margin-bottom: 40px;
+        border-left: 3px solid $green-opacity;
+    }
+    .directions__directions-card:last-child{
+        border-right: 3px solid $green-opacity;
+    }
+}
+
 @media (max-width: 991.98px) { 
     /* navigation */ 
     .navigation{
@@ -164,9 +201,16 @@ font-family: 'Raleway', sans-serif;
     }
     /* main */
     .main {
-        background-image: url('/images/main992.png');
+        background-image: url('https://douw147.github.io/building_company/images/main992.png');
         .main__main-photo{
             position: relative;
+        }
+    }
+
+    /* directions */
+    .directions{
+        .directions-card-2{
+            border-right: 3px solid $green-opacity;
         }
     }
 }
@@ -174,11 +218,20 @@ font-family: 'Raleway', sans-serif;
 @media (max-width: 767.98px) {
     /* main */
     .main {
-        background-image: url('/images/main798.png');
+        background-image: url('https://douw147.github.io/building_company/images/main798.png');
         .main__main-photo{
             
         }
     }
+    /* directions */
+    .directions{
+        .directions__directions-card{
+            width: 70%;
+            border-left: 3px solid $green-opacity;
+            border-right: 3px solid $green-opacity;
+        }
+    }
+
 }
 
 @media (max-width: 575.98px) {
@@ -192,10 +245,43 @@ font-family: 'Raleway', sans-serif;
     }
     /* main */
     .main {
-        background-image: url('/images/main500.png');
+        background-image: url('https://douw147.github.io/building_company/images/main500.png');
         .main__main-photo{
             
         }
+        .main__main-button{
+            margin-top: 80px;
+        }
+        .main__main-decoration{
+            margin: 50px 0;
+            width: 80%;
+        }
     }
-    
+
+    /* directions */
+    .directions{
+        .directions__directions-card{
+            padding: 0;
+            border: none;
+            width: 90%;
+        }
+        .directions__directions-card:last-child{
+            border: none;
+        }
+        .directions-container{
+            padding: 0 10px;
+            border-left: 3px solid $green-opacity;
+            border-right: 3px solid $green-opacity;
+        }
+        .directions-card-photo{
+            width: 250px;
+            height: auto;
+        }
+        .heading-h5{
+            text-align: center;
+        }
+        .directions-container{
+            text-align: center;
+        }
+    }
 }
