@@ -7,7 +7,7 @@ $white: #fff;
 $menuItemsBlack: #282B22;
 $menuNumber: #3D4A39;
 $green: #3d4a39;
-$green-opacity: rgba(61, 74, 57, 0.2);
+$greenOpacity: rgba(61, 74, 57, 0.2);
 $black: #000;
 
 /* decorators */
@@ -54,6 +54,18 @@ font-family: 'Raleway', sans-serif;
     text-align: center;
     text-transform: uppercase;
     color: $menuItemsBlack;
+}
+
+.heading-h3{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 130%;
+    text-align: center;
+    color: $menuItemsBlack;
+    text-align: center;
+    padding-top: 110px;
 }
 
 .heading-h5{
@@ -172,10 +184,10 @@ font-family: 'Raleway', sans-serif;
     padding-bottom: 90px;
     .directions__directions-card{
         margin-bottom: 40px;
-        border-left: 3px solid $green-opacity;
+        border-left: 1px solid $greenOpacity;
     }
     .directions__directions-card:last-child{
-        border-right: 3px solid $green-opacity;
+        border-right: 1px solid $greenOpacity;
     }
 }
 
@@ -205,6 +217,61 @@ font-family: 'Raleway', sans-serif;
         margin-bottom: 60px;
     }
     
+}
+
+/* pringo */
+
+.pringo{
+    padding-bottom: 100px;
+    .pringo__card-row{
+        margin-top: 100px;
+        border-bottom: 1px solid $greenOpacity;
+        .pringo__pringo-card{
+            display: flex;
+            align-items: flex-start;
+            padding: 15px;
+            .pringo-container-image{
+                position: relative;
+                top: 3px;
+            }
+        }
+        .card-left{
+            border-top: 1px solid $greenOpacity;
+            border-right: 1px solid $greenOpacity;
+            padding-right: 0;
+        }
+        .card-right{
+            border-top: 1px solid $greenOpacity;
+            padding-left: 0;
+        }
+    }
+    .text-18-medium{
+        margin: 0;
+        font-size: 17px;
+    }
+    .pringo-smart-image1{
+        position: absolute;
+        top: -280px;
+        left: -200px;
+    }
+    .pringo-smart-image2{
+        position: absolute;
+        top: -120px;
+        right: -210px;
+    }
+}
+
+@media (max-width: 1400px) { 
+    .pringo{
+        .pringo-smart-image1{
+            top: -280px;
+            left: -100px;
+        }
+        .pringo-smart-image2{
+            top: -280px;
+            right: -100px;
+        }
+    }
 }
 
 @media (max-width: 991.98px) { 
@@ -240,8 +307,17 @@ font-family: 'Raleway', sans-serif;
     /* directions */
     .directions{
         .directions-card-2{
-            border-right: 3px solid $green-opacity;
+            border-right: 1px solid $greenOpacity;
         }
+    }
+}
+
+@media (max-width: 830px) {
+    .pringo-smart-image1{
+        display: none;
+    }
+    .pringo-smart-image2{
+        display: none;
     }
 }
 
@@ -257,8 +333,24 @@ font-family: 'Raleway', sans-serif;
     .directions{
         .directions__directions-card{
             width: 70%;
-            border-left: 3px solid $green-opacity;
-            border-right: 3px solid $green-opacity;
+            border-left: 3px solid $greenOpacity;
+            border-right: 3px solid $greenOpacity;
+        }
+    }
+
+    /* pringo */
+
+    .pringo{
+        .pringo__card-row{
+            .card-left{
+                border-right: none;
+            }
+        }
+        .pringo-smart-image1{
+            display: none;
+        }
+        .pringo-smart-image2{
+            display: none;
         }
     }
 
@@ -304,9 +396,9 @@ font-family: 'Raleway', sans-serif;
         }
         .directions-container{
             padding: 0 10px 12%;
-            border-left: 2px solid $green-opacity;
-            border-right: 2px solid $green-opacity;
-            border-bottom: 2px solid $green-opacity;
+            border-left: 2px solid $greenOpacity;
+            border-right: 2px solid $greenOpacity;
+            border-bottom: 2px solid $greenOpacity;
         }
         .directions-card-photo{
             width: 260px;
@@ -336,4 +428,7 @@ font-family: 'Raleway', sans-serif;
             margin-bottom: 65px;
         }
     }
+
+   
+    
 }
