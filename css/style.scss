@@ -68,6 +68,15 @@ font-family: 'Raleway', sans-serif;
     padding-top: 110px;
 }
 
+.heading-h4{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 130%;
+    color: $menuItemsBlack;
+}
+
 .heading-h5{
     margin-bottom: 35px;
     font-family: Raleway;
@@ -86,6 +95,16 @@ font-family: 'Raleway', sans-serif;
     font-size: 18px;
     line-height: 27px;
     text-align: center;
+}
+
+.text-16-regular{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 135%;
+    color: $menuItemsBlack;
+    opacity: 0.8;
 }
 
 .text-botton{
@@ -130,6 +149,42 @@ font-family: 'Raleway', sans-serif;
         }
     }
 }
+
+/* swiper */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
 /* main */
 .background{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) -13.19%, rgba(0, 0, 0, 0.85) 94.01%)
@@ -189,6 +244,9 @@ font-family: 'Raleway', sans-serif;
     .directions__directions-card:last-child{
         border-right: 1px solid $greenOpacity;
     }
+    .directions__directions-card-mobile{
+        display: none;
+    }
 }
 
 /* we provide */
@@ -229,7 +287,7 @@ font-family: 'Raleway', sans-serif;
         .pringo__pringo-card{
             display: flex;
             align-items: flex-start;
-            padding: 15px;
+            padding: 25px 15px;
             .pringo-container-image{
                 position: relative;
                 top: 3px;
@@ -260,6 +318,46 @@ font-family: 'Raleway', sans-serif;
         right: -210px;
     }
 }
+
+/* advantages */
+
+.advantages{
+    padding-bottom: 100px;
+    .heading-h2{
+        margin-top: 0;
+    }
+    .heading-h5{
+        opacity: 0.3;
+    }
+    .advantages__advantages-card{
+        padding: 25px 15px;
+    }
+    .advantages__advartages-row{
+        border-top: 1px solid $greenOpacity;
+    }
+    .advantages__advartages-row:last-child{
+        border-bottom: 1px solid $greenOpacity;
+    }
+    .left-advantages-card{
+        padding-right: 0;
+        border-right: 1px solid $greenOpacity;
+    }
+    .advantages__advantages-image{
+        position: absolute;
+        top: -45px;
+        left: 90px;
+    }
+    .advantages__advartages-row{
+        transition: padding 0.1s linear;
+    }
+    .advantages__advartages-row:hover{
+        color: $brown!important;
+        font-size: 50px;
+        padding: 40px 15px;
+    }
+
+}
+
 
 @media (max-width: 1400px) { 
     .pringo{
@@ -310,6 +408,15 @@ font-family: 'Raleway', sans-serif;
             border-right: 1px solid $greenOpacity;
         }
     }
+
+    /* advantages */
+    .advantages{
+        .advantages__advantages-image{
+            width: 240px;
+            height: auto;
+            top: -12px;
+        }
+    }
 }
 
 @media (max-width: 830px) {
@@ -354,6 +461,12 @@ font-family: 'Raleway', sans-serif;
         }
     }
 
+    /* advantages */
+    .advantages{
+        .advantages__advantages-image{
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -386,6 +499,7 @@ font-family: 'Raleway', sans-serif;
     /* directions */
     .directions{
         .directions__directions-card{
+            display: none;
             padding: 0;
             margin-bottom: 90px;
             border: none;
@@ -395,10 +509,10 @@ font-family: 'Raleway', sans-serif;
             border: none;
         }
         .directions-container{
-            padding: 0 10px 12%;
-            border-left: 2px solid $greenOpacity;
-            border-right: 2px solid $greenOpacity;
-            border-bottom: 2px solid $greenOpacity;
+            padding: 20px 25px;
+            border-left: 1px solid $greenOpacity;
+            border-right: 1px solid $greenOpacity;
+            border-bottom: 1px solid $greenOpacity;
         }
         .directions-card-photo{
             width: 260px;
@@ -410,6 +524,12 @@ font-family: 'Raleway', sans-serif;
         }
         .directions-container{
             text-align: center;
+        }
+        .directions__directions-card-mobile{
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            padding: 20px 25px;
         }
     }
 
