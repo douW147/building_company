@@ -7,7 +7,7 @@ $white: #fff;
 $menuItemsBlack: #282B22;
 $menuNumber: #3D4A39;
 $green: #3d4a39;
-$greenOpacity: rgba(61, 74, 57, 0.2);
+$greenOpacity: rgba(61, 74, 57, 0.3);
 $black: #000;
 
 /* decorators */
@@ -91,6 +91,14 @@ font-family: 'Raleway', sans-serif;
     color: $green;
 }
 
+.text-18-semibold{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+}
+
 .text-18-medium{
     margin: 60px 7% 0;
     font-family: 'Raleway', sans-serif;
@@ -109,6 +117,14 @@ font-family: 'Raleway', sans-serif;
     line-height: 135%;
     color: $menuItemsBlack;
     opacity: 0.8;
+}
+
+.text-16-medium{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 145%;
 }
 
 .text-14-medium{
@@ -529,6 +545,27 @@ font-family: 'Raleway', sans-serif;
             width: 100%;
             height: auto;
         }
+    }
+}
+
+/* stages */
+
+.stages{
+    .stages-card-number{
+        margin-bottom: 30px;
+        height: 60px;
+        width: 60px;
+        border: 1px solid $greenOpacity;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .heading-h5{
+        margin: 0;
+    }
+    .text-18-semibold{
+        margin-bottom: 15px;
     }
 }
 
