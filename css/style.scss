@@ -278,13 +278,14 @@ font-family: 'Raleway', sans-serif;
     padding-bottom: 90px;
     .directions__directions-card{
         margin-bottom: 40px;
-        border-left: 1px solid $greenOpacity;
-    }
-    .directions__directions-card:last-child{
-        border-right: 1px solid $greenOpacity;
     }
     .directions__directions-card-mobile{
         display: none;
+    }
+    .directions-container{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 23px 23px;
+        border-radius: 4%;
     }
 }
 
@@ -805,11 +806,6 @@ footer{
     }
 
     /* directions */
-    .directions{
-        .directions-card-2{
-            border-right: 1px solid $greenOpacity;
-        }
-    }
 
     /* advantages */
     .advantages{
@@ -886,8 +882,6 @@ footer{
     .directions{
         .directions__directions-card{
             width: 70%;
-            border-left: 3px solid $greenOpacity;
-            border-right: 3px solid $greenOpacity;
         }
     }
 
@@ -956,9 +950,6 @@ footer{
         }
         .directions-container{
             padding: 20px 25px;
-            border-left: 1px solid $greenOpacity;
-            border-right: 1px solid $greenOpacity;
-            border-bottom: 1px solid $greenOpacity;
         }
         .directions-card-photo{
             width: 260px;
