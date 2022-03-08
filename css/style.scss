@@ -349,14 +349,30 @@ font-family: 'Raleway', sans-serif;
     }
     .pringo-smart-image1{
         position: absolute;
+        overflow: hidden;
         top: -280px;
         left: -200px;
+        width: 160px;
+        height: 200px;
     }
     .pringo-smart-image2{
         position: absolute;
         top: -120px;
         right: -210px;
+        overflow: hidden;
+        width: 160px;
+        height: 200px;
     }
+}
+
+.smart-image1{
+    position: relative;
+    left: 0;
+}
+
+.smart-image2{
+    position: relative;
+    left: 0;
 }
 
 /* advantages */
