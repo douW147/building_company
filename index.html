@@ -53,7 +53,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-7 main__main-text">
-                        <h1 class="heading-h1">Ремонт<br>Будівель</h1>
+                        <h1 class="heading-h1 animatable fadeInUp">Ремонт<br>Будівель</h1>
                         <p class="text-18-medium --text-align-center">Ми виконуємо ввесь спектр оздоблювальних та
                             будівельних робіт. Забезпечимо вас якісним та надійним ремонтом на багато років.
                         </p>
@@ -70,7 +70,9 @@
     </section>
     <section class="directions">
         <div class="container --text-align-center">
-            <h2 class="heading-h2">Основні Напрямки</h2>
+            <div class="animatable fadeInUp">
+                <h2 class="heading-h2 animatable fadeInUp">Основні Напрямки</h2>
+            </div>
             <div class="row --justify-content-center">
                 <div class="col-lg-4 col-md-6 directions__directions-card">
                     <div class="directions-container">
@@ -79,7 +81,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 directions__directions-card directions-card-2">
-                    <div class="directions-container">
+                    <div class="directions-container animatable bounceIn">
                         <h5 class="heading-h5">Оздоблювальні роботи</h5>
                         <img src="./images/directions2.png" alt="image about buildings" width="280px" height="320px" class="directions-card-photo" >
                     </div>
@@ -493,6 +495,18 @@
             </div>
         </div>
     </footer>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45060306.91979326!2d-76.38975994999998!3d46.42366899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6e8f75155e324d29%3A0xe0e913b69c55f4c8!2sUnibrix!5e0!3m2!1sru!2sua!4v1683480592213!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="video-container">
+        <iframe width="900" height="506" src="https://www.youtube.com/embed/tQ0yjYUFKAE?list=RDn9DmdAwUbxc" title="Justin Bieber - Peaches ft. Daniel Caesar, Giveon" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="container">
+        <audio controls>
+            <source src="./assets/audio.mp3">
+        </audio>
+    </div>
+    <div id="SinoptikInformer" style="width:240px;" class="SinoptikInformer type1c1"><div class="siHeader"><div class="siLh"><div class="siMh"><a onmousedown="siClickCount();" class="siLogo" href="https://ua.sinoptik.ua/" target="_blank" rel="nofollow" title="Погода"> </a>Погода <span id="siHeader"></span></div></div></div><div class="siBody"><a onmousedown="siClickCount();" href="https://ua.sinoptik.ua/погода-київ" title="Погода у Києві" target="_blank"><div class="siCity"><div class="siCityName"><span>Київ</span></div><div id="siCont0" class="siBodyContent"><div class="siLeft"><div class="siTerm"></div><div class="siT" id="siT0"></div><div id="weatherIco0"></div></div><div class="siInf"><p>вологість: <span id="vl0"></span></p><p>тиск: <span id="dav0"></span></p><p>вітер: <span id="wind0"></span></p></div></div></div></a><div class="siLinks">Погода на 10 днів від <a href="https://ua.sinoptik.ua/погода-київ/10-днів" title="Погода на 10 днів" target="_blank" onmousedown="siClickCount();">sinoptik.ua</a></div></div><div class="siFooter"><div class="siLf"><div class="siMf"></div></div></div></div><script type="text/javascript" charset="UTF-8" src="//sinoptik.ua/informers_js.php?title=4&amp;wind=3&amp;cities=303010783&amp;lang=ua"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
