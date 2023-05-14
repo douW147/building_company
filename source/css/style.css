@@ -4,10 +4,28 @@
     width: 100wv;
     display: flex;
     justify-content: center;
+    border-radius: 5%;
 }
 
 .video-container {
     width: 100wv;
     display: flex;
     justify-content: center;
+}
+
+.weprovide{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(61,74,57,1) 35%, rgba(0,255,145,1) 100%);
+}
+
+#mapDiv {
+    border-radius: 5%;
+}
+
+.social-avatar__inst {
+    transition: .2s linear;
+}
+
+.social-avatar__inst:hover {
+    transform: scale(1.5) rotate(180deg);
 }

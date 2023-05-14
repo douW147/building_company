@@ -1,5 +1,5 @@
 @charset "UTF-8";*{padding:0;margin:0;border:0}*,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box}:active,:focus{outline:none}a:active,a:focus{outline:none}aside,footer,header,nav{display:block}body,html{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%}button,input,textarea{font-family:inherit}input::-ms-clear{display:none}button{cursor:pointer}button::-moz-focus-inner{padding:0;border:0}a,a:visited{text-decoration:none}a:hover{text-decoration:none}ul li{list-style:none}img{vertical-align:top}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@400;600;800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* variables */
 
 $brown: #AE7B3C;
@@ -346,6 +346,9 @@ font-family: 'Raleway', sans-serif;
             line-height: 100%;
             text-transform: uppercase;
         }
+        .nav-link:hover {
+            color: rgba(0,0,0,.7);
+        }
     }
 }
 
@@ -455,7 +458,8 @@ font-family: 'Raleway', sans-serif;
 /* we provide */
 
 .weprovide{
-    background-color: $green;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(61,74,57,1) 35%, rgba(0,255,145,1) 100%);
     color: $white;
     padding-bottom: 40px;
     .heading-h2{
@@ -1196,7 +1200,9 @@ footer{
         .col-sm-6{
             margin-bottom: 15px;
         }
-    }
-   
-    
+    } 
+}
+
+#mapDiv {
+    border-radius: 5%;
 }
